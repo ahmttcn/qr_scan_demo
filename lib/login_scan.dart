@@ -35,7 +35,7 @@ class _LoginScanPageState extends State<LoginScanPage> {
             onPressed: () async {
               ScanResult codeSanner = await BarcodeScanner.scan(
                 options: ScanOptions(
-                  useCamera: -1,
+                  useCamera: camera,
                 ),
               ); //barcode scnner
               setState(() {
